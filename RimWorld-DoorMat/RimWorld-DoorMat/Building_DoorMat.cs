@@ -8,7 +8,7 @@ namespace LT
         public override void Tick()
         {
             base.Tick();
-            if(!Gen.IsHashIntervalTick(this, 10))
+            if(!this.IsHashIntervalTick(10))
             {
                 return;
             }
@@ -20,10 +20,7 @@ namespace LT
                     continue;
                 }
                 var pawn = Find.Map.thingGrid.ThingAt<Pawn>(current);
-                if(pawn != null)
-                {
-                    pawn.filth.GetType().GetMethod("TryDropFilth", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(pawn.filth, null);
-                }
+                pawn?.filth.GetType().GetMethod("TryDropFilth", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(pawn.filth, null);
             }
         }
     }
