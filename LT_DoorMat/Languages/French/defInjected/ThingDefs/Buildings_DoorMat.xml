@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <LT_DoorMatRed.label>paillasson (rouge)</LT_DoorMatRed.label>
+    <LT_DoorMatRed.description>Un paillasson pour s'essuyer les pieds.</LT_DoorMatRed.description>
+
+    <LT_DoorMatGreen.label>paillasson (vert)</LT_DoorMatGreen.label>
+    <LT_DoorMatGreen.description>Un paillasson pour s'essuyer les pieds.</LT_DoorMatGreen.description>
+
+    <LT_DoorMatBlue.label>paillasson (bleue)</LT_DoorMatBlue.label>
+    <LT_DoorMatBlue.description>Un paillasson pour s'essuyer les pieds.</LT_DoorMatBlue.description>
+
+    <LT_DoorMatBigRed.label>grand paillasson (rouge)</LT_DoorMatBigRed.label>
+    <LT_DoorMatBigRed.description>Un grand paillasson pour s'essuyer les pieds.</LT_DoorMatBigRed.description>
+
+    <LT_DoorMatBigGreen.label>grand paillasson (vert)</LT_DoorMatBigGreen.label>
+    <LT_DoorMatBigGreen.description>Un grand paillasson pour s'essuyer les pieds.</LT_DoorMatBigGreen.description>
+
+    <LT_DoorMatBigBlue.label>grand paillasson (bleue)</LT_DoorMatBigBlue.label>
+    <LT_DoorMatBigBlue.description>Un grand paillasson pour s'essuyer les pieds.</LT_DoorMatBigBlue.description>
+
+</LanguageData>

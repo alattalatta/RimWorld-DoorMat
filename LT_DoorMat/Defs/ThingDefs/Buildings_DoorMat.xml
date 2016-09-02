@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Buildings>
+
+    <ThingDef Name="BuildingBase" Abstract="True">
+        <category>Building</category>
+        <thingClass>Building</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <minifiedDef>MinifiedFurniture</minifiedDef>
+        <repairEffect>Repair</repairEffect>
+        <selectable>true</selectable>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <tradeTags>
+            <li>Furniture</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef Abstract="True" Name="MatBase" ParentName="BuildingBase">
+        <thingClass>LT.Building_DoorMat</thingClass>
+        <description>A doormat to clean your feet.</description>
+        <graphicData>
+            <texPath>Things/Building/DoorMat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Beauty>5</Beauty>
+            <MarketValue>5</MarketValue>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <WorkToMake>120</WorkToMake>
+        </statBases>
+        <building>
+            <isEdifice>false</isEdifice>
+        </building>
+        <costList>
+            <Cloth>6</Cloth>
+        </costList>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <designationCategory>Misc</designationCategory>
+        <passability>Standable</passability>
+        <pathCost>20</pathCost>
+        <researchPrerequisites>
+            <li>CarpetMaking</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <tickerType>Normal</tickerType>
+    </ThingDef>
+
+    <ThingDef ParentName="MatBase">
+        <defName>LT_DoorMatRed</defName>
+        <label>doormat (red)</label>
+        <graphicData>
+            <color>(118,49,57)</color>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MatBase">
+        <defName>LT_DoorMatGreen</defName>
+        <label>doormat (green)</label>
+        <graphicData>
+            <color>(89,105,62)</color>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MatBase">
+        <defName>LT_DoorMatBlue</defName>
+        <label>doormat (blue)</label>
+        <graphicData>
+            <color>(24,65,121)</color>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef Abstract="True" Name="MatBigBase" ParentName="MatBase">
+        <graphicData>
+            <texPath>Things/Building/DoorMatBig</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,1)</drawSize>
+        </graphicData>
+        <statBases>
+            <Beauty>10</Beauty>
+            <MarketValue>8</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>240</WorkToMake>
+        </statBases>
+        <costList>
+            <Cloth>12</Cloth>
+        </costList>
+        <size>(2,1)</size>
+    </ThingDef>
+
+    <ThingDef ParentName="MatBigBase">
+        <defName>LT_DoorMatBigRed</defName>
+        <label>large doormat (red)</label>
+        <graphicData>
+            <color>(118,49,57)</color>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MatBigBase">
+        <defName>LT_DoorMatBigGreen</defName>
+        <label>large doormat (green)</label>
+        <graphicData>
+            <color>(89,105,62)</color>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MatBigBase">
+        <defName>LT_DoorMatBigBlue</defName>
+        <label>large doormat (blue)</label>
+        <graphicData>
+            <color>(24,65,121)</color>
+        </graphicData>
+    </ThingDef>
+
+</Buildings>
