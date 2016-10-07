@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <LT_DoorMatRed.label>felpudo (rojo)</LT_DoorMatRed.label>
+    <LT_DoorMatRed.description>Un felpudo para limpiar sus pies.</LT_DoorMatRed.description>
+
+    <LT_DoorMatGreen.label>felpudo (verde)</LT_DoorMatGreen.label>
+    <LT_DoorMatGreen.description>Un felpudo para limpiar sus pies.</LT_DoorMatGreen.description>
+
+    <LT_DoorMatBlue.label>felpudo (azul)</LT_DoorMatBlue.label>
+    <LT_DoorMatBlue.description>Un felpudo para limpiar sus pies.</LT_DoorMatBlue.description>
+
+    <LT_DoorMatBigRed.label>gran felpudo (rojo)</LT_DoorMatBigRed.label>
+    <LT_DoorMatBigRed.description>Un felpudo para limpiar sus pies.</LT_DoorMatBigRed.description>
+
+    <LT_DoorMatBigGreen.label>gran felpudo (verde)</LT_DoorMatBigGreen.label>
+    <LT_DoorMatBigGreen.description>Un felpudo para limpiar sus pies.</LT_DoorMatBigGreen.description>
+
+    <LT_DoorMatBigBlue.label>gran felpudo (azul)</LT_DoorMatBigBlue.label>
+    <LT_DoorMatBigBlue.description>Un felpudo para limpiar sus pies.</LT_DoorMatBigBlue.description>
+
+</LanguageData>
