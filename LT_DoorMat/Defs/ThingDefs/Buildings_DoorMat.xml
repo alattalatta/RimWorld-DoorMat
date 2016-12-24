@@ -3,26 +3,26 @@
 
     <ThingDef Name="BuildingBase" Abstract="True">
         <category>Building</category>
-        <thingClass>Building</thingClass>
+        <thingClass>LT.Building_DoorMat</thingClass>
+
         <drawerType>MapMeshAndRealTime</drawerType>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <minifiedDef>MinifiedFurniture</minifiedDef>
+        <repairEffect>Repair</repairEffect>
+        <selectable>true</selectable>
         <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <comps>
             <li>
                 <compClass>CompQuality</compClass>
             </li>
         </comps>
-        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-        <minifiedDef>MinifiedFurniture</minifiedDef>
-        <repairEffect>Repair</repairEffect>
-        <selectable>true</selectable>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <tradeTags>
             <li>Furniture</li>
         </tradeTags>
     </ThingDef>
 
     <ThingDef Abstract="True" Name="MatBase" ParentName="BuildingBase">
-        <thingClass>LT.Building_DoorMat</thingClass>
         <description>A doormat to clean your feet.</description>
         <graphicData>
             <texPath>Things/Building/DoorMat</texPath>
@@ -30,10 +30,10 @@
         </graphicData>
         <statBases>
             <Beauty>1</Beauty>
+            <Flammability>1.0</Flammability>
             <MarketValue>5</MarketValue>
             <MaxHitPoints>50</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-            <WorkToMake>120</WorkToMake>
+            <WorkToBuild>120</WorkToBuild>
         </statBases>
         <building>
             <isEdifice>false</isEdifice>
@@ -86,7 +86,7 @@
             <Beauty>2</Beauty>
             <MarketValue>8</MarketValue>
             <MaxHitPoints>80</MaxHitPoints>
-            <WorkToMake>240</WorkToMake>
+            <WorkToBuild>240</WorkToBuild>
         </statBases>
         <costList>
             <Cloth>12</Cloth>

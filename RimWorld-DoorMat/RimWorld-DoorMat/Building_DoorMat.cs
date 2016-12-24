@@ -8,18 +8,19 @@ namespace LT
         public override void Tick()
         {
             base.Tick();
-            if(!this.IsHashIntervalTick(10))
+            // Execute only every 10 ticks
+            if (!this.IsHashIntervalTick(10))
             {
                 return;
             }
-            //Execute every 10 ticks
-            foreach(var current in this.OccupiedRect())
+            foreach(var rect in this.OccupiedRect())
             {
-                if(current.Impassable())
+                if(rect.Impassable(Map))
                 {
                     continue;
                 }
-                var pawn = Find.Map.thingGrid.ThingAt<Pawn>(current);
+                // A pawn over me
+                var pawn = Map.thingGrid.ThingAt<Pawn>(rect);
                 pawn?.filth.GetType().GetMethod("TryDropFilth", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(pawn.filth, null);
             }
         }
