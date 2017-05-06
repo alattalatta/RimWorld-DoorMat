@@ -10,13 +10,19 @@
     <LT_DoorMatBlue.label>파랑색 흙털개</LT_DoorMatBlue.label>
     <LT_DoorMatBlue.description>발의 먼지를 털 수 있는 작은 매트입니다.</LT_DoorMatBlue.description>
 
+    <LT_DoorMatLeather.label>가죽 흙털개</LT_DoorMatLeather.label>
+    <LT_DoorMatLeather.description>발의 먼지를 털 수 있는 작은 매트입니다.</LT_DoorMatLeather.description>
+
     <LT_DoorMatBigRed.label>커다란 빨간색 흙털개</LT_DoorMatBigRed.label>
     <LT_DoorMatBigRed.description>발의 먼지를 털 수 있는 작은 매트입니다.</LT_DoorMatBigRed.description>
 
     <LT_DoorMatBigGreen.label>커다란 초록색 흙털개</LT_DoorMatBigGreen.label>
     <LT_DoorMatBigGreen.description>발의 먼지를 털 수 있는 작은 매트입니다.</LT_DoorMatBigGreen.description>
 
-    <LT_DoorMatBigBlue.label>커다란 파랑색 흙털개</LT_DoorMatBigBlue.label>
+    <LT_DoorMatBigBlue.label>커다란 파란색 흙털개</LT_DoorMatBigBlue.label>
     <LT_DoorMatBigBlue.description>발의 먼지를 털 수 있는 작은 매트입니다.</LT_DoorMatBigBlue.description>
+
+    <LT_DoorMatBigLeather.label>커다란 가죽 흙털개</LT_DoorMatBigLeather.label>
+    <LT_DoorMatBigLeather.description>발의 먼지를 털 수 있는 작은 매트입니다.</LT_DoorMatBigLeather.description>
 
 </LanguageData>

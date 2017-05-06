@@ -76,6 +76,15 @@
         </graphicData>
     </ThingDef>
 
+    <ThingDef ParentName="MatBase">
+        <defName>LT_DoorMatLeather</defName>
+        <label>doormat (leather)</label>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>6</costStuffCount>
+    </ThingDef>
+
     <ThingDef Abstract="True" Name="MatBigBase" ParentName="MatBase">
         <graphicData>
             <texPath>Things/Building/DoorMatBig</texPath>
@@ -116,6 +125,15 @@
         <graphicData>
             <color>(24,65,121)</color>
         </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MatBigBase">
+        <defName>LT_DoorMatBigLeather</defName>
+        <label>large doormat (leather)</label>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>12</costStuffCount>
     </ThingDef>
 
 </Buildings>
