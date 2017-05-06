@@ -75,19 +75,6 @@
             <color>(24,65,121)</color>
         </graphicData>
     </ThingDef>
-	
-    <ThingDef ParentName="MatBase">
-        <defName>LT_DoorMatStuff</defName>
-        <label>doormat</label>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-	<costList>
-		<Cloth>3</Cloth>
-	</costList>
-    <costStuffCount>3</costStuffCount>
-    </ThingDef>
 
     <ThingDef ParentName="MatBase">
         <defName>LT_DoorMatLeather</defName>
@@ -95,7 +82,10 @@
         <stuffCategories>
             <li>Leathery</li>
         </stuffCategories>
-        <costStuffCount>6</costStuffCount>
+        <costList>
+            <Cloth>3</Cloth>
+        </costList>
+        <costStuffCount>3</costStuffCount>
     </ThingDef>
 
     <ThingDef Abstract="True" Name="MatBigBase" ParentName="MatBase">
@@ -139,19 +129,6 @@
             <color>(24,65,121)</color>
         </graphicData>
     </ThingDef>
-	
-    <ThingDef ParentName="MatBigBase">
-        <defName>LT_DoorMatBigStuff</defName>
-        <label>large doormat</label>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-	<costList>
-		<Cloth>6</Cloth>
-	</costList>
-    <costStuffCount>6</costStuffCount>
-    </ThingDef>
 
     <ThingDef ParentName="MatBigBase">
         <defName>LT_DoorMatBigLeather</defName>
@@ -159,7 +136,10 @@
         <stuffCategories>
             <li>Leathery</li>
         </stuffCategories>
-        <costStuffCount>12</costStuffCount>
+        <costList>
+            <Cloth>6</Cloth>
+        </costList>
+        <costStuffCount>6</costStuffCount>
     </ThingDef>
 
 </Buildings>
