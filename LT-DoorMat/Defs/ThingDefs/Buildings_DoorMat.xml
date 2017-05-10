@@ -77,9 +77,10 @@
     </ThingDef>
 
     <ThingDef ParentName="MatBase">
-        <defName>LT_DoorMatLeather</defName>
-        <label>doormat (leather)</label>
+        <defName>LT_DoorMatStuff</defName>
+        <label>doormat</label>
         <stuffCategories>
+            <li>Fabric</li>
             <li>Leathery</li>
         </stuffCategories>
         <costList>
@@ -131,9 +132,10 @@
     </ThingDef>
 
     <ThingDef ParentName="MatBigBase">
-        <defName>LT_DoorMatBigLeather</defName>
-        <label>large doormat (leather)</label>
+        <defName>LT_DoorMatBigStuff</defName>
+        <label>large doormat</label>
         <stuffCategories>
+            <li>Fabric</li>
             <li>Leathery</li>
         </stuffCategories>
         <costList>
