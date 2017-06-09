@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Buildings>
 
-    <ThingDef Name="BuildingBase" Abstract="True">
-        <category>Building</category>
+    <ThingDef Abstract="True" Name="LT_MatBase" ParentName="BuildingBase">
         <thingClass>LT.Building_DoorMat</thingClass>
-
-        <drawerType>MapMeshAndRealTime</drawerType>
-        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-        <minifiedDef>MinifiedFurniture</minifiedDef>
-        <repairEffect>Repair</repairEffect>
-        <selectable>true</selectable>
-        <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <description>A doormat to clean your feet.</description>
+        <building>
+            <isEdifice>false</isEdifice>
+        </building>
         <comps>
             <li>
                 <compClass>CompQuality</compClass>
             </li>
         </comps>
-        <tradeTags>
-            <li>Furniture</li>
-        </tradeTags>
-    </ThingDef>
-
-    <ThingDef Abstract="True" Name="MatBase" ParentName="BuildingBase">
-        <description>A doormat to clean your feet.</description>
+        <costList>
+            <Cloth>6</Cloth>
+        </costList>
         <graphicData>
             <texPath>Things/Building/DoorMat</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <researchPrerequisites>
+            <li>CarpetMaking</li>
+        </researchPrerequisites>
         <statBases>
             <Beauty>1</Beauty>
             <Flammability>1.0</Flammability>
@@ -35,24 +29,23 @@
             <MaxHitPoints>50</MaxHitPoints>
             <WorkToBuild>120</WorkToBuild>
         </statBases>
-        <building>
-            <isEdifice>false</isEdifice>
-        </building>
-        <costList>
-            <Cloth>6</Cloth>
-        </costList>
         <altitudeLayer>FloorEmplacement</altitudeLayer>
         <designationCategory>Misc</designationCategory>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <filthLeaving>BuildingRubble</filthLeaving>
+        <minifiedDef>MinifiedFurniture</minifiedDef>
         <passability>Standable</passability>
         <pathCost>20</pathCost>
-        <researchPrerequisites>
-            <li>CarpetMaking</li>
-        </researchPrerequisites>
+        <repairEffect>Repair</repairEffect>
         <rotatable>true</rotatable>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <tickerType>Normal</tickerType>
+        <tradeTags>
+            <li>Furniture</li>
+        </tradeTags>
     </ThingDef>
 
-    <ThingDef ParentName="MatBase">
+    <ThingDef ParentName="LT_MatBase">
         <defName>LT_DoorMatRed</defName>
         <label>doormat (red)</label>
         <graphicData>
@@ -60,7 +53,7 @@
         </graphicData>
     </ThingDef>
 
-    <ThingDef ParentName="MatBase">
+    <ThingDef ParentName="LT_MatBase">
         <defName>LT_DoorMatGreen</defName>
         <label>doormat (green)</label>
         <graphicData>
@@ -68,7 +61,7 @@
         </graphicData>
     </ThingDef>
 
-    <ThingDef ParentName="MatBase">
+    <ThingDef ParentName="LT_MatBase">
         <defName>LT_DoorMatBlue</defName>
         <label>doormat (blue)</label>
         <graphicData>
@@ -76,11 +69,10 @@
         </graphicData>
     </ThingDef>
 
-    <ThingDef ParentName="MatBase">
-        <defName>LT_DoorMatStuff</defName>
-        <label>doormat</label>
+    <ThingDef ParentName="LT_MatBase">
+        <defName>LT_DoorMatLeather</defName>
+        <label>doormat (leather)</label>
         <stuffCategories>
-            <li>Fabric</li>
             <li>Leathery</li>
         </stuffCategories>
         <costList>
@@ -89,7 +81,7 @@
         <costStuffCount>3</costStuffCount>
     </ThingDef>
 
-    <ThingDef Abstract="True" Name="MatBigBase" ParentName="MatBase">
+    <ThingDef Abstract="True" Name="MatBigBase" ParentName="LT_MatBase">
         <graphicData>
             <texPath>Things/Building/DoorMatBig</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -132,10 +124,9 @@
     </ThingDef>
 
     <ThingDef ParentName="MatBigBase">
-        <defName>LT_DoorMatBigStuff</defName>
-        <label>large doormat</label>
+        <defName>LT_DoorMatBigLeather</defName>
+        <label>large doormat (leather)</label>
         <stuffCategories>
-            <li>Fabric</li>
             <li>Leathery</li>
         </stuffCategories>
         <costList>
