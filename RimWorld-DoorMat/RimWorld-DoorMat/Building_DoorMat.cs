@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Linq;
+using System.Reflection;
 using Verse;
 
 namespace LT
@@ -9,20 +10,31 @@ namespace LT
         {
             base.Tick();
             // Execute only every 10 ticks
-            if (!this.IsHashIntervalTick(10))
+            if (! this.IsHashIntervalTick(10))
             {
                 return;
             }
-            foreach(var rect in this.OccupiedRect())
+            foreach (var rect in this.OccupiedRect())
             {
-                if(rect.Impassable(Map))
+                if (rect.Impassable(Map))
                 {
                     continue;
                 }
-                // A pawn over me
-                var pawn = Map.thingGrid.ThingAt<Pawn>(rect);
-                pawn?.filth.GetType().GetMethod("TryDropFilth", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(pawn.filth, null);
+                
+                var pawns = Map.thingGrid.ThingsAt(rect)
+                    .Where(s => s.GetType() == typeof(Pawn))
+                    .Cast<Pawn>();
+                foreach (var pawn in pawns)
+                {
+                    pawn?.filth.GetType().GetMethod("TryDropFilth", BindingFlags.Instance | BindingFlags.NonPublic)
+                        .Invoke(pawn.filth, null);
+                }
             }
+        }
+
+        public override void DrawGUIOverlay()
+        {
+            //
         }
     }
 }

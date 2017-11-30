@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Buildings>
-
-    <ThingDef Abstract="True" Name="LT_MatBase" ParentName="BuildingBase">
+<Defs>
+    <ThingDef Abstract="True" ParentName="BuildingBase" Name="LT_MatBase">
         <thingClass>LT.Building_DoorMat</thingClass>
         <description>A doormat to clean your feet.</description>
         <building>
+            <ai_chillDestination>false</ai_chillDestination>
+            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
             <isEdifice>false</isEdifice>
         </building>
         <comps>
@@ -30,8 +31,9 @@
             <WorkToBuild>120</WorkToBuild>
         </statBases>
         <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <clearBuildingArea>false</clearBuildingArea>
         <designationCategory>Misc</designationCategory>
-        <drawerType>MapMeshAndRealTime</drawerType>
+        <drawGUIOverlay>True</drawGUIOverlay>
         <filthLeaving>BuildingRubble</filthLeaving>
         <minifiedDef>MinifiedFurniture</minifiedDef>
         <passability>Standable</passability>
@@ -134,5 +136,4 @@
         </costList>
         <costStuffCount>6</costStuffCount>
     </ThingDef>
-
-</Buildings>
+</Defs>
