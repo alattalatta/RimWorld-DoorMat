@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationInsert">
+        <xpath>*/Def[@Name="LT_DoorMatArchitectSense"]</xpath>
+        <value>
+            <ArchitectSense.DesignationSubCategoryDef>
+                <defName>SubCategory_DoorMat</defName>
+                <label>doormats</label>
+                <description>Doormats to clean your feet.</description>
+                <defNames>
+                    <li>LT_DoorMatRed</li>
+                    <li>LT_DoorMatOrange</li>
+                    <li>LT_DoorMatGreen</li>
+                    <li>LT_DoorMatTeal</li>
+                    <li>LT_DoorMatBlue</li>
+                    <li>LT_DoorMatLeather</li>
+                </defNames>
+                <designationCategory>Misc</designationCategory>
+            </ArchitectSense.DesignationSubCategoryDef>
+
+            <ArchitectSense.DesignationSubCategoryDef>
+                <defName>SubCategory_DoorMatLarge</defName>
+                <label>large doormats</label>
+                <description>Large doormats to clean your feet.</description>
+                <defNames>
+                    <li>LT_DoorMatBigRed</li>
+                    <li>LT_DoorMatBigOrange</li>
+                    <li>LT_DoorMatBigGreen</li>
+                    <li>LT_DoorMatBigTeal</li>
+                    <li>LT_DoorMatBigBlue</li>
+                    <li>LT_DoorMatBigLeather</li>
+                </defNames>
+                <designationCategory>Misc</designationCategory>
+            </ArchitectSense.DesignationSubCategoryDef>
+        </value>
+    </Operation>
+</Patch>
