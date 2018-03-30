@@ -3,19 +3,19 @@
 
   <!-- End Abstracts -->
 
-  <LT_DoorMatStuff.label>ドアマット</LT_DoorMatStuff.label>
-  <LT_DoorMatStuff.description>ドアマットは足元を清潔にします。</LT_DoorMatStuff.description>
-  <LT_DoorMatStuff_Blueprint.label>ドアマット (設計)</LT_DoorMatStuff_Blueprint.label>
-  <LT_DoorMatStuff_Blueprint_Install.label>ドアマット　(移動先)</LT_DoorMatStuff_Blueprint_Install.label>
-  <LT_DoorMatStuff_Frame.label>ドアマット　(施工)</LT_DoorMatStuff_Frame.label>
-  <LT_DoorMatStuff_Frame.description>ドアマットは足元を清潔にします。</LT_DoorMatStuff_Frame.description>
+  <LT_DoorMatLeather.label>ドアマット</LT_DoorMatLeather.label>
+  <LT_DoorMatLeather.description>ドアマットは足元を清潔にします。</LT_DoorMatLeather.description>
+  <LT_DoorMatLeather_Blueprint.label>ドアマット (設計)</LT_DoorMatLeather_Blueprint.label>
+  <LT_DoorMatLeather_Blueprint_Install.label>ドアマット　(移動先)</LT_DoorMatLeather_Blueprint_Install.label>
+  <LT_DoorMatLeather_Frame.label>ドアマット　(施工)</LT_DoorMatLeather_Frame.label>
+  <LT_DoorMatLeather_Frame.description>ドアマットは足元を清潔にします。</LT_DoorMatLeather_Frame.description>
 
-  <LT_DoorMatBigStuff.label>大きなドアマット</LT_DoorMatBigStuff.label>
-  <LT_DoorMatBigStuff.description>ドアマットは足元を清潔にします。</LT_DoorMatBigStuff.description>
-  <LT_DoorMatBigStuff_Blueprint.label>大きなドアマット　(設計)</LT_DoorMatBigStuff_Blueprint.label>
-  <LT_DoorMatBigStuff_Blueprint_Install.label>大きなドアマット　(移動先)</LT_DoorMatBigStuff_Blueprint_Install.label>
-  <LT_DoorMatBigStuff_Frame.label>大きなドアマット　(施工)</LT_DoorMatBigStuff_Frame.label>
-  <LT_DoorMatBigStuff_Frame.description>ドアマットは足元を清潔にします。</LT_DoorMatBigStuff_Frame.description>
+  <LT_DoorMatBigLeather.label>大きなドアマット</LT_DoorMatBigLeather.label>
+  <LT_DoorMatBigLeather.description>ドアマットは足元を清潔にします。</LT_DoorMatBigLeather.description>
+  <LT_DoorMatBigLeather_Blueprint.label>大きなドアマット　(設計)</LT_DoorMatBigLeather_Blueprint.label>
+  <LT_DoorMatBigLeather_Blueprint_Install.label>大きなドアマット　(移動先)</LT_DoorMatBigLeather_Blueprint_Install.label>
+  <LT_DoorMatBigLeather_Frame.label>大きなドアマット　(施工)</LT_DoorMatBigLeather_Frame.label>
+  <LT_DoorMatBigLeather_Frame.description>ドアマットは足元を清潔にします。</LT_DoorMatBigLeather_Frame.description>
 
   <LT_DoorMatRed.label>ドアマット　(赤)</LT_DoorMatRed.label>
   <LT_DoorMatRed.description>ドアマットは足元を清潔にします。</LT_DoorMatRed.description>
